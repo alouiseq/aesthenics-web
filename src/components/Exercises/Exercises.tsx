@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Button, Card, Modal } from 'antd';
 
+import { aggregateList } from '../../common/utils/utils';
+
 export type ExerciseProps = {
   id: string,
   name: string,
@@ -53,6 +55,16 @@ const imageStyle = {
   marginTop: '10px',
 } as any;
 
+const nameStyle = {
+  fontWeight: 'bold',
+} as any;
+
+const targetStyle = {
+  marginTop: '10px',
+  fontSize: '10px',
+  fontStyle: 'italic',
+} as any;
+
 const ExercisesSet = ({children}: any) => {
   return (
     <>
@@ -76,14 +88,14 @@ const ExercisesCard = ({name, level, imageUrl, target}: ExerciseProps) => {
   return (
     <>
     <Card title={title} extra={extra} style={cardStyle}>
-      <div>{name}</div>
-      <div>{level}</div>
+      <div style={nameStyle}>{name}</div>
+      <div style={targetStyle}>{aggregateList(target)}</div>
     </Card>
     <Modal visible={visible} onCancel={handleHideModal} footer={[
       <Button key="close" onClick={handleHideModal}>Close</Button>
     ]}>
       <div>{name}</div>
-      <div>{`body target: [${target.join(', ')}]`}</div>
+      <div>{`body target: ${aggregateList(target)}`}</div>
       <div style={imageContainerStyle}>
         <img src={imageUrl} alt="sample.gif" style={imageStyle} />
       </div>
