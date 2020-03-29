@@ -1,23 +1,37 @@
 import React from 'react';
-import { Router, Route, Switch } from 'react-router-dom';
+import { Router, Route, Redirect } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
+import { Layout } from 'antd';
 
-import Home from './routes/Home/Home';
+import Drawer from './routes/Drawer/Drawer';
+import Exercises from './routes/Exercises/Exercises';
 import Workouts from './routes/Workouts/Workouts';
 import './App.css';
 
+const history = createBrowserHistory();
+
+const layoutStyle = {
+  minHeight: '100vh',
+} as any;
+
 function App() {
   return (
-    <Router history={createBrowserHistory()}>
-      <Switch>
+    <Layout style={layoutStyle}>
+      <Router history={history}>
+        <Route path="/">
+          <Drawer />
+        </Route>
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
         <Route path="/workouts">
           <Workouts />
         </Route>
-        <Route path="/">
-          <Home />
+        <Route path="/home">
+          <Exercises />
         </Route>
-      </Switch>
-    </Router>
+      </Router>
+    </Layout>
   );
 }
 
