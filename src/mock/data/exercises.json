@@ -1,0 +1,173 @@
+{
+  "status": "200",
+  "data": [
+    {
+      "id": "1234",
+      "name": "Freeform handstand",
+      "level": "Advanced",
+      "imageUrl": "",
+      "target": [],
+      "type": "handstand"
+    },
+    {
+      "id": "1235",
+      "name": "Handstand wall pushups",
+      "level": "Intermediate",
+      "imageUrl": "",
+      "target": [],
+      "type": "handstand"
+    },
+    {
+      "id": "1236",
+      "name": "Wall walks",
+      "level": "Intermediate",
+      "imageUrl": "",
+      "target": [],
+      "type": "handstand"
+    },
+    {
+      "id": "1237",
+      "name": "Handstand wall holds",
+      "level": "Beginner",
+      "imageUrl": "",
+      "target": [],
+      "type": "handstand"
+    },
+    {
+      "id": "1238",
+      "name": "Regular pushups",
+      "level": "Beginner",
+      "imageUrl": "",
+      "target": [],
+      "type": "upperBody"
+    },
+    {
+      "id": "1239",
+      "name": "Elevated pushups",
+      "level": "intermediate",
+      "imageUrl": "",
+      "target": [],
+      "type": "upperBody"
+    },
+    {
+      "id": "1240",
+      "name": "Diamond pushups",
+      "level": "Intermediate",
+      "imageUrl": "",
+      "target": [],
+      "type": "upperBody"
+    },
+    {
+      "id": "1241",
+      "name": "Bicycle kicks",
+      "level": "Beginner",
+      "imageUrl": "",
+      "target": [],
+      "type": "abs"
+    },
+    {
+      "id": "1242",
+      "name": "Pistol Squats",
+      "level": "Advanced",
+      "imageUrl": "",
+      "target": [],
+      "type": "legs"
+    },
+    {
+      "id": "1243",
+      "name": "Regular pullups",
+      "level": "Intermediate",
+      "imageUrl": "",
+      "target": [],
+      "type": "upperBody"
+    },
+    {
+      "id": "1244",
+      "name": "Dips",
+      "level": "Beginner",
+      "imageUrl": "",
+      "target": [],
+      "type": "upperBody"
+    },
+    {
+      "id": "1245",
+      "name": "Butt kicks",
+      "level": "Beginner",
+      "imageUrl": "",
+      "target": [],
+      "type": "cardio"
+    },
+    {
+      "id": "1246",
+      "name": "Jumping jacks",
+      "level": "Beginner",
+      "imageUrl": "",
+      "target": [],
+      "type": "cardio"
+    },
+    {
+      "id": "1247",
+      "name": "Leg raises",
+      "level": "Beginner",
+      "imageUrl": "",
+      "target": [],
+      "type": "abs"
+    },
+    {
+      "id": "1248",
+      "name": "Calf raises",
+      "level": "Beginner",
+      "imageUrl": "",
+      "target": [],
+      "type": "legs"
+    },
+    {
+      "id": "1249",
+      "name": "Burpees",
+      "level": "Intermediate",
+      "imageUrl": "",
+      "target": [],
+      "type": "cardio"
+    },
+    {
+      "id": "1250",
+      "name": "Planche",
+      "level": "Advanced",
+      "imageUrl": "",
+      "target": [],
+      "type": "planche"
+    },
+    {
+      "id": "1251",
+      "name": "Front lever",
+      "level": "Advanced",
+      "imageUrl": "",
+      "target": [],
+      "type": "lever"
+    },
+    {
+      "id": "1252",
+      "name": "Back lever",
+      "level": "Advanced",
+      "imageUrl": "",
+      "target": [],
+      "type": "lever"
+    },
+    {
+      "id": "1253",
+      "name": "Superman fly",
+      "level": "Beginner",
+      "imageUrl": "",
+      "target": [],
+      "type": "upperBody"
+    },
+    {
+      "id": "1254",
+      "name": "One hand pull ups",
+      "level": "Advanced",
+      "imageUrl": "",
+      "target": [],
+      "type": "upperBody"
+    }
+  ]
+}
