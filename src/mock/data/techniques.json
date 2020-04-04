@@ -1,0 +1,55 @@
+{
+  "status": "200",
+  "data": [
+    {
+      "id": 12,
+      "key": "hiit",
+      "value": "HIIT"
+    },
+    {
+      "id": 13,
+      "key": "abs",
+      "value": "Abs"
+    },
+    {
+      "id": 14,
+      "key": "upperBody",
+      "value": "Upper Body"
+    },
+    {
+      "id": 15,
+      "key": "frontLever",
+      "value": "Front Lever"
+    },
+    {
+      "id": 16,
+      "key": "backLever",
+      "value": "Back Lever"
+    },
+    {
+      "id": 17,
+      "key": "lowerBody",
+      "value": "Lower Body"
+    },
+    {
+      "id": 18,
+      "key": "pullups",
+      "value": "Pullups"
+    },
+    {
+      "id": 19,
+      "key": "handstands",
+      "value": "Handstands"
+    },
+    {
+      "id": 20,
+      "key": "pistolSquats",
+      "value": "Pistol Squats"
+    },
+    {
+      "id": 21,
+      "key": "muscleUps",
+      "value": "Muscle Ups"
+    }
+  ]
+}

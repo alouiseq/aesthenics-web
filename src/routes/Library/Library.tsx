@@ -8,7 +8,7 @@ import mockGif from '../../mock/images/pistolSquat.gif';
 
 const { Content } = Layout;
 
-const Exercises = () => {
+const Library = () => {
   const data = mockData.data.map((d: ExerciseProps) => {
     d.imageUrl = mockGif;
     d.target = ['bicep', 'shoulder'];
@@ -28,4 +28,4 @@ const Exercises = () => {
   );
 };
 
-export default Exercises;
+export default Library;

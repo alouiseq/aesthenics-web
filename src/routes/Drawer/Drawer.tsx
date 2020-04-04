@@ -1,7 +1,10 @@
 import React from 'react';
-import { Button, Layout } from 'antd';
-import { Link, useLocation } from 'react-router-dom';
+import { Layout } from 'antd';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
+
+import ButtonLink from '../../common/components/ButtonLink/ButtonLink';
+import CustomWorkout from '../../components/CustomWorkout/CustomWorkout';
 
 const { Sider } = Layout;
 
@@ -10,22 +13,16 @@ const siderStyle = {
   textAlign: 'center',
 } as any;
 
-const buttonStyle = {
-  marginTop: '25px',
-  color: '#000',
-};
-
 const renderExercisesDrawer = () => (
-  <Button style={buttonStyle}>
-    <Link to="/workouts">Go to Workouts</Link>
-  </Button>
-)
+  <ButtonLink path="/workouts" label="Go to Workouts" />
+);
 
 const renderWorkoutDrawer = () => (
-  <Button style={buttonStyle}>
-    <Link to="/home">Go to Exercises</Link>
-  </Button>
-)
+  <>
+    <ButtonLink path="/home" label="Go to Exercises" />
+    <CustomWorkout />
+  </>
+);
 
 const Drawer = () => {
   const location = useLocation();

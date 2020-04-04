@@ -4,7 +4,7 @@ import { createBrowserHistory } from 'history';
 import { Layout } from 'antd';
 
 import Drawer from './routes/Drawer/Drawer';
-import Exercises from './routes/Exercises/Exercises';
+import Library from './routes/Library/Library';
 import Workouts from './routes/Workouts/Workouts';
 import './App.css';
 
@@ -28,7 +28,7 @@ function App() {
           <Workouts />
         </Route>
         <Route path="/home">
-          <Exercises />
+          <Library />
         </Route>
       </Router>
     </Layout>
