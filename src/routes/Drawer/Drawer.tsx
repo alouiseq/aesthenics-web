@@ -13,13 +13,17 @@ const siderStyle = {
   textAlign: 'center',
 } as any;
 
+const addButtonLinkStyle = {
+  margin: '25px 0 30px 0',
+} as any;
+
 const renderExercisesDrawer = () => (
   <ButtonLink path="/workouts" label="Go to Workouts" />
 );
 
 const renderWorkoutDrawer = () => (
   <>
-    <ButtonLink path="/home" label="Go to Exercises" />
+    <ButtonLink path="/home" label="Go to Exercises" style={addButtonLinkStyle} />
     <CustomWorkout />
   </>
 );
