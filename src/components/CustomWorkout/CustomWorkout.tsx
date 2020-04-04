@@ -50,7 +50,7 @@ export default () => {
             }
           >
             {moves.map((move) => (
-              <Option value={move.key}>{move.value}</Option>
+              <Option value={move.key} key={move.key}>{move.value}</Option>
             ))}
           </Select>
         </Form.Item>

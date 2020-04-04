@@ -10,10 +10,8 @@ interface IButtonLinkProps {
 }
 
 export default ({ label, path, style }: IButtonLinkProps) => {
-  const ButtonLink = styled(Button)`
-    margin-top: 25px;
-    color: #000;
-  `;
+  // TODO: this might need style
+  const ButtonLink = styled(Button)``;
 
   return (
     <ButtonLink style={style}>
