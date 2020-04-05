@@ -168,6 +168,14 @@
       "imageUrl": "",
       "target": [],
       "type": "upperBody"
+    },
+    {
+      "id": "1255",
+      "name": "Archer Pushup",
+      "level": "Advanced",
+      "imageUrl": "",
+      "target": [],
+      "type": "upperBody"
     }
   ]
 }

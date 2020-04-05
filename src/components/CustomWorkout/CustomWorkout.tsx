@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Form, Select } from 'antd';
+import { CaretLeftOutlined, CaretRightOutlined } from '@ant-design/icons';
 
 import techniques from '../../mock/data/techniques.json';
+import workoutSchedule from '../../mock/data/schedule.json';
 
 const { Option } = Select;
 
@@ -11,13 +13,25 @@ interface IMoveProps {
   value: string,
 };
 
+interface IScheduleProps {
+  week: number,
+  move: string,
+  exercises: object[],
+}
+
 // import ButtonLink from '../../common/components/ButtonLink/ButtonLink';
 
 export default () => {
   const [selectedMove, setMove] = useState<IMoveProps | undefined>(undefined);
+  const [currentSchedule, setSchedule] = useState<IScheduleProps | null>(null);
 
   // TODO: data should come from API
   const moves = techniques.data;
+  const schedule = workoutSchedule.data;
+
+  useEffect(() => {
+    if (schedule) setSchedule(schedule[0]);
+  }, [schedule]);
 
   const handlePicker = () => {
     // TODO: this logic should go to utils
@@ -26,18 +40,37 @@ export default () => {
     setMove(newMove);
   };
 
+  const handleDateChange = (changed: string) => () => {
+    const foundIndex = schedule.findIndex(sch => currentSchedule && sch.week === currentSchedule.week);
+    if (changed === 'before' && schedule[foundIndex - 1]) {
+      setSchedule(schedule[foundIndex - 1]);
+    } else if (changed === 'after' && schedule[foundIndex + 1]) {
+      setSchedule(schedule[foundIndex + 1]);
+    }
+  }
+
+  const handleSubmit = () => {
+    console.log('SUCCESS');
+  }
+
+  const handleSubmitFailed = () => {
+    console.log('FAILED');
+  }
+
   return (
     <>
-      <Form>
+      <Form onFinish={handleSubmit} onFinishFailed={handleSubmitFailed}>
         <Form.Item>
           <div>Week:</div>
-          <Button>Week 1</Button>
+          <CaretLeftOutlined onClick={handleDateChange('before')} />
+          <Button>Week {currentSchedule&& currentSchedule.week}</Button>
+          <CaretRightOutlined onClick={handleDateChange('after')} />
         </Form.Item>
         <Form.Item>
           <div>Technique:</div>
           <Select
             showSearch
-            style={{ width: 200 }}
+            style={{ width: '80%' }}
             placeholder="Select a technique"
             optionFilterProp="children"
             value={selectedMove && selectedMove.key}

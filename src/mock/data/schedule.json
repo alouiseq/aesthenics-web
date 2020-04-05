@@ -1,0 +1,76 @@
+{
+  "status": 200,
+  "data": [
+    {
+      "id": "1111",
+      "week": 1,
+      "move": "upperBody",
+      "exercises": [
+        {
+          "id": "1238",
+          "value": "Regular Pushup"
+        },
+        {
+          "id": "1240",
+          "value": "Diamond Pushup"
+        },
+        {
+          "id": "1243",
+          "value": "Regular Pullup"
+        },
+        {
+          "id": "1244",
+          "value": "Dips"
+        },
+        {
+          "id": "1238",
+          "value": "Archer Pushup"
+        },
+        {
+          "id": "1234",
+          "value": "Freeform Handstand"
+        },
+        {
+          "id": "1253",
+          "value": "Superman Fly"
+        }
+      ]
+    },
+    {
+      "id": "1112",
+      "week": 2,
+      "move": "legs",
+      "exercises": []
+    },
+    {
+      "id": "1113",
+      "week": 3,
+      "move": "abs",
+      "exercises": []
+    },
+    {
+      "id": "1114",
+      "week": 4,
+      "move": "dance",
+      "exercises": []
+    },
+    {
+      "id": "1115",
+      "week": 5,
+      "move": "pistolSquats",
+      "exercises": []
+    },
+    {
+      "id": "1116",
+      "week": 6,
+      "move": "muscleUps",
+      "exercises": []
+    },
+    {
+      "id": "1117",
+      "week": 7,
+      "move": "hiit",
+      "exercises": []
+    }
+  ]
+}
