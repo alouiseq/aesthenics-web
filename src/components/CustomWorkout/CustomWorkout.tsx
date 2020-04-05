@@ -8,15 +8,15 @@ import workoutSchedule from '../../mock/data/schedule.json';
 const { Option } = Select;
 
 interface IMoveProps {
-  id: number,
+  id: string,
   key: string,
   value: string,
 };
 
 interface IScheduleProps {
+  id: string,
   week: number,
-  move: string,
-  exercises: object[],
+  workouts: object[],
 }
 
 // import ButtonLink from '../../common/components/ButtonLink/ButtonLink';

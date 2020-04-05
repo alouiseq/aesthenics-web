@@ -1,0 +1,12 @@
+.schedule-collapse-panel {
+  background: #000;
+}
+
+.schedule-workout .schedule-collapse .schedule-collapse-panel .ant-collapse-header {
+  background: #000;
+  color: #FFF;
+}
+
+.schedule-workout .ant-collapse {
+  background: #000;
+}

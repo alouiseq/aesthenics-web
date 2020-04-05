@@ -2,53 +2,53 @@
   "status": "200",
   "data": [
     {
-      "id": 12,
+      "id": "012",
       "key": "hiit",
       "value": "HIIT"
     },
     {
-      "id": 13,
+      "id": "013",
       "key": "abs",
       "value": "Abs"
     },
     {
-      "id": 14,
+      "id": "014",
       "key": "upperBody",
       "value": "Upper Body"
     },
     {
-      "id": 15,
+      "id": "015",
       "key": "frontLever",
       "value": "Front Lever"
     },
     {
-      "id": 16,
+      "id": "016",
       "key": "backLever",
       "value": "Back Lever"
     },
     {
-      "id": 17,
+      "id": "017",
       "key": "lowerBody",
       "value": "Lower Body"
     },
     {
-      "id": 18,
-      "key": "pullups",
+      "id": "018",
+      "key": "pullup",
       "value": "Pullups"
     },
     {
-      "id": 19,
-      "key": "handstands",
+      "id": "019",
+      "key": "handstand",
       "value": "Handstands"
     },
     {
-      "id": 20,
-      "key": "pistolSquats",
+      "id": "020",
+      "key": "pistolSquat",
       "value": "Pistol Squats"
     },
     {
-      "id": 21,
-      "key": "muscleUps",
+      "id": "021",
+      "key": "muscleUp",
       "value": "Muscle Ups"
     }
   ]
