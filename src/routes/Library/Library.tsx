@@ -11,7 +11,6 @@ const { Content } = Layout;
 const Library = () => {
   const data = mockData.data.map((d: ExerciseProps) => {
     d.imageUrl = mockGif;
-    d.target = ['bicep', 'shoulder'];
     return d;
   });
   

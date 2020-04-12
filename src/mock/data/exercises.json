@@ -6,7 +6,7 @@
       "name": "Freeform handstand",
       "level": "Advanced",
       "imageUrl": "",
-      "target": [],
+      "target": ["shoulder", "tricep"],
       "type": "handstand"
     },
     {
@@ -14,7 +14,7 @@
       "name": "Handstand wall pushups",
       "level": "Intermediate",
       "imageUrl": "",
-      "target": [],
+      "target": ["shoulder", "tricep"],
       "type": "handstand"
     },
     {
@@ -22,7 +22,7 @@
       "name": "Wall walks",
       "level": "Intermediate",
       "imageUrl": "",
-      "target": [],
+      "target": ["shoulder", "tricep"],
       "type": "handstand"
     },
     {
@@ -30,7 +30,7 @@
       "name": "Handstand wall holds",
       "level": "Beginner",
       "imageUrl": "",
-      "target": [],
+      "target": ["shoulder", "tricep"],
       "type": "handstand"
     },
     {
@@ -38,7 +38,7 @@
       "name": "Regular pushups",
       "level": "Beginner",
       "imageUrl": "",
-      "target": [],
+      "target": ["tricep"],
       "type": "upperBody"
     },
     {
@@ -46,7 +46,7 @@
       "name": "Elevated pushups",
       "level": "intermediate",
       "imageUrl": "",
-      "target": [],
+      "target": ["tricep"],
       "type": "upperBody"
     },
     {
@@ -54,7 +54,7 @@
       "name": "Diamond pushups",
       "level": "Intermediate",
       "imageUrl": "",
-      "target": [],
+      "target": ["tricep", "chest"],
       "type": "upperBody"
     },
     {
@@ -62,7 +62,7 @@
       "name": "Bicycle kicks",
       "level": "Beginner",
       "imageUrl": "",
-      "target": [],
+      "target": ["abs"],
       "type": "abs"
     },
     {
@@ -70,7 +70,7 @@
       "name": "Pistol Squats",
       "level": "Advanced",
       "imageUrl": "",
-      "target": [],
+      "target": ["legs"],
       "type": "legs"
     },
     {
@@ -78,7 +78,7 @@
       "name": "Regular pullups",
       "level": "Intermediate",
       "imageUrl": "",
-      "target": [],
+      "target": ["tricep", "shoulder"],
       "type": "upperBody"
     },
     {
@@ -86,7 +86,7 @@
       "name": "Dips",
       "level": "Beginner",
       "imageUrl": "",
-      "target": [],
+      "target": ["tricep"],
       "type": "upperBody"
     },
     {
@@ -94,7 +94,7 @@
       "name": "Butt kicks",
       "level": "Beginner",
       "imageUrl": "",
-      "target": [],
+      "target": ["cardio"],
       "type": "cardio"
     },
     {
@@ -102,7 +102,7 @@
       "name": "Jumping jacks",
       "level": "Beginner",
       "imageUrl": "",
-      "target": [],
+      "target": ["cardio"],
       "type": "cardio"
     },
     {
@@ -110,7 +110,7 @@
       "name": "Leg raises",
       "level": "Beginner",
       "imageUrl": "",
-      "target": [],
+      "target": ["legs", "abs"],
       "type": "abs"
     },
     {
@@ -118,7 +118,7 @@
       "name": "Calf raises",
       "level": "Beginner",
       "imageUrl": "",
-      "target": [],
+      "target": ["calf", "legs"],
       "type": "legs"
     },
     {
@@ -126,7 +126,7 @@
       "name": "Burpees",
       "level": "Intermediate",
       "imageUrl": "",
-      "target": [],
+      "target": ["cardio", "legs", "bicep", "shoulder", "tricep"],
       "type": "cardio"
     },
     {
@@ -134,7 +134,7 @@
       "name": "Planche",
       "level": "Advanced",
       "imageUrl": "",
-      "target": [],
+      "target": ["tricep", "bicep", "shoulder"],
       "type": "planche"
     },
     {
@@ -142,7 +142,7 @@
       "name": "Front lever",
       "level": "Advanced",
       "imageUrl": "",
-      "target": [],
+      "target": ["tricep", "bicep", "shoulder"],
       "type": "lever"
     },
     {
@@ -150,7 +150,7 @@
       "name": "Back lever",
       "level": "Advanced",
       "imageUrl": "",
-      "target": [],
+      "target": ["tricep", "bicep", "shoulder"],
       "type": "lever"
     },
     {
@@ -158,7 +158,7 @@
       "name": "Superman fly",
       "level": "Beginner",
       "imageUrl": "",
-      "target": [],
+      "target": ["back"],
       "type": "upperBody"
     },
     {
@@ -166,7 +166,7 @@
       "name": "One hand pull ups",
       "level": "Advanced",
       "imageUrl": "",
-      "target": [],
+      "target": ["tricep", "back"],
       "type": "upperBody"
     },
     {
@@ -174,7 +174,7 @@
       "name": "Archer Pushup",
       "level": "Advanced",
       "imageUrl": "",
-      "target": [],
+      "target": ["tricep", "chest"],
       "type": "upperBody"
     }
   ]
