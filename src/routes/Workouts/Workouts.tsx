@@ -1,21 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Layout } from 'antd';
+import { connect } from 'react-redux';
 
 import Schedule from '../../components/Schedule/Schedule';
-import workoutSchedule from '../../mock/data/schedule.json';
+// import workoutSchedule from '../../mock/data/schedule.json';
+import { getWorkoutSchedule } from './actions';
 
 const { Content } = Layout;
 
-const Workouts = () => {
-  const schedule = workoutSchedule.data;
+const Workouts = ({ getWorkoutSchedule, workoutSchedule }: any) => {
+  useEffect(() => {
+    getWorkoutSchedule();
+  }, [getWorkoutSchedule]);
 
   return (
     <Layout>
       <Content style={{backgroundColor: '#000'}}>
-        <Schedule data={schedule} />
+        {workoutSchedule.length && <Schedule data={workoutSchedule} />}
       </Content>
     </Layout>
   );
 };
 
-export default Workouts;
+const mapStateToProps = (state: any) => {
+  return {
+    workoutSchedule: state.workout.schedule,
+  };
+};
+
+const mapDispatchToProps = (dispatch: any) => ({
+  getWorkoutSchedule: () => dispatch(getWorkoutSchedule()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Workouts);

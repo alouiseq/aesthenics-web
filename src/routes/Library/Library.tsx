@@ -9,10 +9,6 @@ import { getExercises } from './actions';
 const { Content } = Layout;
 
 const Library = ({ getExercises, exercises }: any) => {
-  // const data = mockData.data.map((d: ExerciseProps) => {
-  //   d.imageUrl = mockGif;
-  //   return d;
-  // });
   useEffect(() => {
     getExercises();
   }, [getExercises]);

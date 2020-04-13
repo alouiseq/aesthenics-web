@@ -16,7 +16,7 @@ export const getExercises = () => async (dispatch: any) => {
     });
   } catch(err) {
     dispatch({
-      type: GET_EXERCISES_SUCCESS,
+      type: GET_EXERCISES_FAILED,
       error: err,
     });
   }

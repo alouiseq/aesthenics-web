@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Form, Select } from 'antd';
 import { CaretLeftOutlined, CaretRightOutlined } from '@ant-design/icons';
+import { connect } from 'react-redux';
 
-import techniques from '../../mock/data/techniques.json';
-import workoutSchedule from '../../mock/data/schedule.json';
+import { getTechniques } from './actions';
+import { getWorkoutSchedule } from '../../routes/Workouts/actions';
+// import techniques from '../../mock/data/techniques.json';
+// import workoutSchedule from '../../mock/data/schedule.json';
 
 const { Option } = Select;
 
@@ -21,31 +24,36 @@ interface IScheduleProps {
 
 // import ButtonLink from '../../common/components/ButtonLink/ButtonLink';
 
-export default () => {
+const CustomWorkout = ({ getTechniques, techniques, getWorkoutSchedule, workoutSchedule }: any) => {
   const [selectedMove, setMove] = useState<IMoveProps | undefined>(undefined);
   const [currentSchedule, setSchedule] = useState<IScheduleProps | null>(null);
 
+  useEffect(() => {
+    getTechniques();
+  }, [getTechniques]);
+
+
   // TODO: data should come from API
-  const moves = techniques.data;
-  const schedule = workoutSchedule.data;
+  // const moves = techniques.data;
+  // const schedule = workoutSchedule.data;
 
   useEffect(() => {
-    if (schedule) setSchedule(schedule[0]);
-  }, [schedule]);
+    if (workoutSchedule) setSchedule(workoutSchedule[0]);
+  }, [workoutSchedule]);
 
   const handlePicker = () => {
     // TODO: this logic should go to utils
-    const len = moves.length;
-    const newMove = moves[Math.round(Math.random()*len)];
+    const len = techniques.length;
+    const newMove = techniques[Math.round(Math.random()*len)];
     setMove(newMove);
   };
 
   const handleDateChange = (changed: string) => () => {
-    const foundIndex = schedule.findIndex(sch => currentSchedule && sch.week === currentSchedule.week);
-    if (changed === 'before' && schedule[foundIndex - 1]) {
-      setSchedule(schedule[foundIndex - 1]);
-    } else if (changed === 'after' && schedule[foundIndex + 1]) {
-      setSchedule(schedule[foundIndex + 1]);
+    const foundIndex = workoutSchedule.findIndex((sch: any) => currentSchedule && sch.week === currentSchedule.week);
+    if (changed === 'before' && workoutSchedule[foundIndex - 1]) {
+      setSchedule(workoutSchedule[foundIndex - 1]);
+    } else if (changed === 'after' && workoutSchedule[foundIndex + 1]) {
+      setSchedule(workoutSchedule[foundIndex + 1]);
     }
   }
 
@@ -82,7 +90,7 @@ export default () => {
               option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
             }
           >
-            {moves.map((move) => (
+            {techniques.map((move: any) => (
               <Option value={move.key} key={move.key}>{move.value}</Option>
             ))}
           </Select>
@@ -97,3 +105,17 @@ export default () => {
     </>
   );
 };
+
+const mapStateToProps = (state: any) => {
+  return {
+    techniques: state.program.techniques,
+    workoutSchedule: state.workout.schedule,
+  };
+};
+
+const mapDispatchToProps = (dispatch: any) => ({
+  getTechniques: () => dispatch(getTechniques()),
+  getWorkoutSchedule: () => dispatch(getWorkoutSchedule()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(CustomWorkout);

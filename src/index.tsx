@@ -6,6 +6,8 @@ import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 import libraryReducer from './routes/Library/reducer';
+import workoutReducer from './routes/Workouts/reducer';
+import techniqueReducer from './components/CustomWorkout/reducer';
 
 import './index.css';
 import App from './App';
@@ -13,6 +15,8 @@ import * as serviceWorker from './serviceWorker';
 
 const rootReducer = {
   library: libraryReducer,
+  workout: workoutReducer,
+  program: techniqueReducer,
 }
 
 const store = createStore(combineReducers(rootReducer), composeWithDevTools(
