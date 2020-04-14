@@ -3,6 +3,11 @@ import mockData from '../../mock/data/exercises.json';
 import mockGif from '../../mock/images/pistolSquat.gif';
 import { ExerciseProps } from '../../components/Exercises/Exercises';
 
+export interface IExerciseProps {
+  getExercises: () => void;
+  exercises: object[];
+};
+
 export const getExercises = () => async (dispatch: any) => {
   dispatch({ type: GET_EXERCISES_PENDING })
   try {

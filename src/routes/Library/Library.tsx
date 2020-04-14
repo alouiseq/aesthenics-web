@@ -4,11 +4,11 @@ import { connect } from 'react-redux';
 // import styled from 'styled-components';
 
 import { ExercisesSet, ExercisesCard } from '../../components/Exercises/Exercises';
-import { getExercises } from './actions';
+import { getExercises, IExerciseProps } from './actions';
 
 const { Content } = Layout;
 
-const Library = ({ getExercises, exercises }: any) => {
+const Library = ({ getExercises, exercises }: IExerciseProps) => {
   useEffect(() => {
     getExercises();
   }, [getExercises]);
