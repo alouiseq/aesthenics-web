@@ -1,9 +1,13 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+// import { render } from '@testing-library/react';
+import ShallowRenderer from 'react-test-renderer/shallow';
 import App from './App';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders App exists in the document', () => {
+  const renderer = ShallowRenderer.createRenderer();
+  renderer.render(<App />);
+  const result = renderer.getRenderOutput();
+  debugger
+
+  expect(result.type).toBe('div');
 });

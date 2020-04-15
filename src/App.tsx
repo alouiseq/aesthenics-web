@@ -16,7 +16,7 @@ const layoutStyle = {
 
 function App() {
   return (
-    <Layout style={layoutStyle}>
+    <Layout className="main-app" style={layoutStyle}>
       <Router history={history}>
         <Route path="/">
           <Drawer />
