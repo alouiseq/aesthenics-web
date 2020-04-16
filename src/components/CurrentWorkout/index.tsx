@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Form, Select } from 'antd';
-import { CaretLeftOutlined, CaretRightOutlined } from '@ant-design/icons';
 import { connect } from 'react-redux';
 
-import { getTechniques } from './actions';
-import { getWorkoutSchedule } from '../../routes/Workouts/actions';
-// import techniques from '../../mock/data/techniques.json';
-// import workoutSchedule from '../../mock/data/schedule.json';
-
-const { Option } = Select;
+import { getTechniques } from '../../common/config/actions/technique';
+import { getWorkoutSchedule } from '../../common/config/actions/workout';
+import CustomWorkout from './CustomWorkout';
 
 interface IMoveProps {
   id: string,
@@ -24,7 +19,7 @@ interface IScheduleProps {
 
 // import ButtonLink from '../../common/components/ButtonLink/ButtonLink';
 
-const CustomWorkout = ({ getTechniques, techniques, getWorkoutSchedule, workoutSchedule }: any) => {
+const CurrentWorkout = ({ getTechniques, techniques, getWorkoutSchedule, workoutSchedule }: any) => {
   const [selectedMove, setMove] = useState<IMoveProps | undefined>(undefined);
   const [currentSchedule, setSchedule] = useState<IScheduleProps | null>(null);
 
@@ -67,41 +62,15 @@ const CustomWorkout = ({ getTechniques, techniques, getWorkoutSchedule, workoutS
 
   return (
     <>
-      <Form onFinish={handleSubmit} onFinishFailed={handleSubmitFailed}>
-        <Form.Item>
-          <div>Week:</div>
-          <CaretLeftOutlined onClick={handleDateChange('before')} />
-          <Button>Week {currentSchedule&& currentSchedule.week}</Button>
-          <CaretRightOutlined onClick={handleDateChange('after')} />
-        </Form.Item>
-        <Form.Item>
-          <div>Technique:</div>
-          <Select
-            showSearch
-            style={{ width: '80%' }}
-            placeholder="Select a technique"
-            optionFilterProp="children"
-            value={selectedMove && selectedMove.key}
-            // onChange={onChange}
-            // onFocus={onFocus}
-            // onBlur={onBlur}
-            // onSearch={onSearch
-            filterOption={(input: string, option: any) => 
-              option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
-            }
-          >
-            {techniques.map((move: any) => (
-              <Option value={move.key} key={move.key}>{move.value}</Option>
-            ))}
-          </Select>
-        </Form.Item>
-        <Form.Item>
-          <Button onClick={handlePicker}>Pick for me</Button>
-        </Form.Item>
-        <Form.Item>
-          <Button type="primary" htmlType="submit">Save</Button>
-        </Form.Item>
-      </Form>
+      <CustomWorkout
+        onHandlePicker={handlePicker}
+        onHandleDateChange={handleDateChange}
+        onHandleSubmit={handleSubmit}
+        onHandleSubmitFailed={handleSubmitFailed}
+        techniques={techniques}
+        move={selectedMove}
+        schedule={currentSchedule}
+      />
     </>
   );
 };
@@ -118,4 +87,4 @@ const mapDispatchToProps = (dispatch: any) => ({
   getWorkoutSchedule: () => dispatch(getWorkoutSchedule()),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(CustomWorkout);
+export default connect(mapStateToProps, mapDispatchToProps)(CurrentWorkout);

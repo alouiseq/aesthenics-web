@@ -5,9 +5,9 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-import libraryReducer from './routes/Library/reducer';
-import workoutReducer from './routes/Workouts/reducer';
-import techniqueReducer from './components/CustomWorkout/reducer';
+import libraryReducer from './common/config/reducers/exercise';
+import workoutReducer from './common/config/reducers/workout';
+import techniqueReducer from './common/config/reducers/technique';
 
 import './index.css';
 import App from './App';

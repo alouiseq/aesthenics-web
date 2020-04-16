@@ -7,8 +7,8 @@ import Drawer from './routes/Drawer/Drawer';
 import './App.css';
 
 const history = createBrowserHistory();
-const LazyLibrary = React.lazy(() => import('./routes/Library/Library'));
-const LazyWorkouts = React.lazy(() => import('./routes/Workouts/Workouts'));
+const LazyLibrary = React.lazy(() => import('./routes/Library'));
+const LazyWorkouts = React.lazy(() => import('./routes/Workout'));
 
 const layoutStyle = {
   minHeight: '100vh',

@@ -1,4 +1,4 @@
-import { GET_TECHNIQUES_PENDING, GET_TECHNIQUES_SUCCESS, GET_TECHNIQUES_FAILED } from './constants';
+import { GET_TECHNIQUES_PENDING, GET_TECHNIQUES_SUCCESS, GET_TECHNIQUES_FAILED } from '../constants';
 
 const initialState = {
   status: null,

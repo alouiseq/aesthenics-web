@@ -1,4 +1,4 @@
-import { GET_EXERCISES_PENDING, GET_EXERCISES_SUCCESS, GET_EXERCISES_FAILED } from './constants';
+import { GET_EXERCISES_PENDING, GET_EXERCISES_SUCCESS, GET_EXERCISES_FAILED } from '../constants';
 
 const initialState = {
   status: null,

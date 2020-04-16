@@ -3,8 +3,8 @@ import { Layout } from 'antd';
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 
-import ButtonLink from '../../common/components/ButtonLink/ButtonLink';
-import CustomWorkout from '../../components/CustomWorkout/CustomWorkout';
+import ButtonLink from '../../components/ButtonLink/ButtonLink';
+import CustomWorkout from '../../components/CurrentWorkout';
 
 const { Sider } = Layout;
 

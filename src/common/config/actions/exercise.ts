@@ -1,7 +1,7 @@
-import { GET_EXERCISES_PENDING, GET_EXERCISES_SUCCESS, GET_EXERCISES_FAILED } from './constants';
-import mockData from '../../mock/data/exercises.json';
-import mockGif from '../../mock/images/pistolSquat.gif';
-import { ExerciseProps } from '../../components/Exercises/Exercises';
+import { GET_EXERCISES_PENDING, GET_EXERCISES_SUCCESS, GET_EXERCISES_FAILED } from '../constants';
+import mockData from '../../../mock/data/exercises.json';
+import mockGif from '../../../mock/images/pistolSquat.gif';
+import { ExerciseProps } from '../../../routes/Library/ExerciseCard';
 
 export interface IExerciseProps {
   getExercises: () => void;

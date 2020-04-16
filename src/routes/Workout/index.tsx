@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { Layout } from 'antd';
 import { connect } from 'react-redux';
 
-import Schedule from '../../components/Schedule/Schedule';
+import Schedule from './Schedule';
 // import workoutSchedule from '../../mock/data/schedule.json';
-import { getWorkoutSchedule } from './actions';
+import { getWorkoutSchedule } from '../../common/config/actions/workout';
 
 const { Content } = Layout;
 

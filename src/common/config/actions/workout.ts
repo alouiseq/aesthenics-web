@@ -1,5 +1,5 @@
-import { GET_WORKOUT_SCHEDULE_PENDING, GET_WORKOUT_SCHEDULE_SUCCESS, GET_WORKOUT_SCHEDULE_FAILED } from './constants';
-import mockData from '../../mock/data/schedule.json';
+import { GET_WORKOUT_SCHEDULE_PENDING, GET_WORKOUT_SCHEDULE_SUCCESS, GET_WORKOUT_SCHEDULE_FAILED } from '../constants';
+import mockData from '../../../mock/data/schedule.json';
 
 export const getWorkoutSchedule = () => async (dispatch: any) => {
   dispatch({ type: GET_WORKOUT_SCHEDULE_PENDING })

@@ -3,10 +3,27 @@ import { Layout } from 'antd';
 import { connect } from 'react-redux';
 // import styled from 'styled-components';
 
-import { ExercisesSet, ExercisesCard } from '../../components/Exercises/Exercises';
-import { getExercises, IExerciseProps } from './actions';
+import ExerciseCard from './ExerciseCard';
+import { getExercises, IExerciseProps } from '../../common/config/actions/exercise';
 
 const { Content } = Layout;
+
+const titleStyle = {
+  color: '#FFF',
+  fontWeight: 'bold',
+  textAlign: 'center',
+  fontSize: '25px',
+  margin: '25px 0 40px',
+} as any;
+
+const exercisesStyle = {
+  display: 'flex',
+  justifyContent: 'flex-start',
+  marginLeft: '200px',
+  marginRight: 'auto',
+  flexWrap: 'wrap',
+  width: '80%',
+} as any;
 
 const Library = ({ getExercises, exercises }: IExerciseProps) => {
   useEffect(() => {
@@ -16,11 +33,12 @@ const Library = ({ getExercises, exercises }: IExerciseProps) => {
   return (
     <Layout>
       <Content style={{backgroundColor: '#000'}}>
-        <ExercisesSet>
+        <header style={titleStyle}>Exercises Library</header>
+        <section style={exercisesStyle}>
           {exercises.map((ex: any) => (
-            <ExercisesCard key={ex.id} {...ex} />
-          ))}
-        </ExercisesSet>
+              <ExerciseCard key={ex.id} {...ex} />
+            ))}
+          </section>
       </Content>
     </Layout>
   );
