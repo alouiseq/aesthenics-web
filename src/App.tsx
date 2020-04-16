@@ -16,26 +16,28 @@ const layoutStyle = {
 
 function App() {
   return (
-    <Layout className="main-app" style={layoutStyle}>
-      <Router history={history}>
-        <Route path="/">
-          <Drawer />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-        <Route path="/workouts">
-          <Suspense fallback={<div>Loading...</div>}>
-            <LazyWorkouts />
-          </Suspense>
-        </Route>
-        <Route path="/home">
-          <Suspense fallback={<div>Loading...</div>}>
-            <LazyLibrary />
-          </Suspense>
-        </Route>
-      </Router>
-    </Layout>
+    <div className="main-app">
+      <Layout style={layoutStyle}>
+        <Router history={history}>
+          <Route path="/">
+            <Drawer />
+          </Route>
+          <Route exact path="/">
+            <Redirect to="/home" />
+          </Route>
+          <Route path="/workouts">
+            <Suspense fallback={<div>Loading...</div>}>
+              <LazyWorkouts />
+            </Suspense>
+          </Route>
+          <Route path="/home">
+            <Suspense fallback={<div>Loading...</div>}>
+              <LazyLibrary />
+            </Suspense>
+          </Route>
+        </Router>
+      </Layout>
+    </div>
   );
 }
 

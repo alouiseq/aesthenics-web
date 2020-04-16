@@ -18,8 +18,8 @@ const titleStyle = {
 
 const exercisesStyle = {
   display: 'flex',
-  justifyContent: 'flex-start',
-  marginLeft: '200px',
+  justifyContent: 'space-evenly',
+  marginLeft: 'auto',
   marginRight: 'auto',
   flexWrap: 'wrap',
   width: '80%',
