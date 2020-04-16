@@ -1,44 +1,8 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { Button, Card, Modal, Collapse } from 'antd';
-
-import './schedule.css';
+import React from 'react';
+// import styled from 'styled-components';
+import { Collapse } from 'antd';
 
 const { Panel } = Collapse;
-
-// export interface IScheduleProps = {
-//   week: number,
-//   move: string,
-//   exercises: object[],
-// };
-
-// const backgroundStyle = {
-//   background: '#000',
-//   color: '#FFF',
-// }
-
-const Schedule = ({ data }: any) => {
-  // TODO: should probably come from API
-  const activeKey = data[0].id;
-  return (
-    <div className="schedule-workout">
-      <Collapse
-        bordered={false}
-        defaultActiveKey={[activeKey]}
-        expandIconPosition="right"
-        className="schedule-collapse" 
-      >
-        {data.map((d: any) => {
-          return (
-            <Panel header={`Week ${d.week}`} key={d.id} className="schedule-collapse-panel">
-              <Workouts data={d.workouts} />
-            </Panel>
-          )
-        })}
-      </Collapse>
-    </div>
-  );
-};
 
 interface IExerciseProps {
   id: string,
@@ -62,7 +26,7 @@ const exerciseMainChildStyle = {
   flexBasis: '25%',
 }
 
-const Workouts = ({ data }: any) => {
+export default ({ data }: any) => {
   const renderExercises = (exercises: any) => (
     exercises.map((ex: IExerciseProps, index: number) => {
       const { id, value, reps, duration } = ex;
@@ -95,5 +59,3 @@ const Workouts = ({ data }: any) => {
     </Collapse>
   );
 };
-
-export default Schedule;

@@ -8,7 +8,7 @@ import './App.css';
 
 const history = createBrowserHistory();
 const LazyLibrary = React.lazy(() => import('./routes/Library'));
-const LazyWorkouts = React.lazy(() => import('./routes/Workout'));
+const LazyWorkoutPlan = React.lazy(() => import('./routes/WorkoutPlan'));
 
 const layoutStyle = {
   minHeight: '100vh',
@@ -27,7 +27,7 @@ function App() {
           </Route>
           <Route path="/workouts">
             <Suspense fallback={<div>Loading...</div>}>
-              <LazyWorkouts />
+              <LazyWorkoutPlan />
             </Suspense>
           </Route>
           <Route path="/home">

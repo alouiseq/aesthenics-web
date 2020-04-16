@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import { Button, Card, Modal } from 'antd';
 
 import { aggregateList } from '../../common/utils/utils';
@@ -63,7 +63,7 @@ export default ({name, level, imageUrl, target, active}: ExerciseProps) => {
   const handleShowModal = () => setVisible(true);
   const handleHideModal = () => setVisible(false);
 
-  const title = <div style={{ ...cardTitleStyle, color: active && '#fff' || 'inherit' }}>{level}</div>;
+  const title = <div style={{ ...cardTitleStyle, color: active ? '#fff' : 'inherit' }}>{level}</div>;
   const extra = <Button size="small" style={cardExtraStyle} onClick={handleShowModal}>More</Button>;
 
   const mergedCardStyle = active ? { ...cardStyle, ...activeCardStyle } : { ...cardStyle };
