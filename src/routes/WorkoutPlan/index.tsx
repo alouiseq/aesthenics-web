@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import WeeklySchedule from './Schedule/WeeklySchedule';
 import { getWorkoutSchedule } from '../../common/config/actions/workout';
+import { getListKeys } from '../../common/utils/utils';
 
 const { Content } = Layout;
 
@@ -13,12 +14,12 @@ const WorkoutPlan = ({ getWorkoutSchedule, workoutSchedule }: any) => {
   }, [getWorkoutSchedule]);
 
   // TODO: This should come from the custom workout section - side panel
-  const activeSchedules = workoutSchedule && workoutSchedule.map((ws: any) => ws.id);
+  const activeScheduleKeys = workoutSchedule && getListKeys(workoutSchedule);
 
   return (
     <Layout>
       <Content style={{backgroundColor: '#000'}}>
-        <WeeklySchedule data={workoutSchedule} active={activeSchedules} />
+        <WeeklySchedule data={workoutSchedule} activeKeys={activeScheduleKeys} />
       </Content>
     </Layout>
   );

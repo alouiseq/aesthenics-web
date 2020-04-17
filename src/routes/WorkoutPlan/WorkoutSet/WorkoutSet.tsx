@@ -1,6 +1,8 @@
 import React from 'react';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 import { Collapse } from 'antd';
+
+import { getListKeys } from '../../../common/utils/utils';
 
 const { Panel } = Collapse;
 
@@ -26,35 +28,47 @@ const exerciseMainChildStyle = {
   flexBasis: '25%',
 }
 
-export default ({ data }: any) => {
-  const renderExercises = (exercises: any) => (
-    exercises.map((ex: IExerciseProps, index: number) => {
-      const { id, value, reps, duration } = ex;
-      return (
-        <div key={id} style={exerciseStyle}>
-          <div style={exerciseChildStyle}>{`${index + 1}.`}</div>
-          <div style={exerciseMainChildStyle}>{value}</div>
-          <div style={exerciseChildStyle}>{reps}</div>
-          <div style={exerciseChildStyle}>{duration}</div>
-        </div>
-      );
-    })
+const renderPanel = ({ id, label, exercises}: any) => (
+  <Panel header={`${label}`} key={id}>
+    { exercises && renderExercises(exercises)}
+  </Panel>
+);
+
+const renderExercises = (exercises: any) => (
+  exercises.map((ex: IExerciseProps, index: number) => {
+    const { id, value, reps, duration } = ex;
+    return (
+      <div key={id} style={exerciseStyle}>
+        <div style={exerciseChildStyle}>{`${index + 1}.`}</div>
+        <div style={exerciseMainChildStyle}>{value}</div>
+        <div style={exerciseChildStyle}>{reps}</div>
+        <div style={exerciseChildStyle}>{duration}</div>
+      </div>
+    );
+  })
+);
+
+export default ({ data, isActive }: any) => {
+  const EmptyDiv = styled.div`
+    color: #FFF;
+    font-style: italic;
+  `;
+
+  const emptyState = () => (
+    <EmptyDiv>No Workout Set</EmptyDiv>
   );
 
-  const activeKey = data.length && data[0].id;
+  if (!data.length) return emptyState();
+
+  const activeKeys = data && isActive && getListKeys(data) || []; 
   return (
     <Collapse
       bordered={false}
-      defaultActiveKey={[activeKey]}
+      defaultActiveKey={activeKeys}
       expandIconPosition="right"
     >
       {data.map((workout: any) => {
-        const { exercises } = workout;
-        return (
-          <Panel header={`${workout.label}`} key={workout.id}>
-           { exercises && renderExercises(exercises)}
-          </Panel>
-        )
+        return renderPanel(workout);
       })}
     </Collapse>
   );

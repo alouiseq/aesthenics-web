@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Collapse } from 'antd';
 
 import WorkoutSet from '../WorkoutSet/WorkoutSet';
-
+import { getListKey } from '../../../common/utils/utils';
 import './schedule.css';
 
 const { Panel } = Collapse;
@@ -19,13 +19,16 @@ const { Panel } = Collapse;
 //   color: '#FFF',
 // }
 
-const renderPanel = ({ week, id, workouts }: any) => (
-  <Panel header={`Week ${week}`} key={id} className="schedule-collapse-panel">
-    <WorkoutSet data={workouts} />
-  </Panel>
-);
+const renderPanel = ({ week, id, workouts }: any, activeKeys: string[]) => {
+  const isActiveWorkout = !!activeKeys && getListKey(activeKeys, id) > -1;
+  return (
+    <Panel header={`Week ${week}`} key={id} className="schedule-collapse-panel">
+      <WorkoutSet data={workouts} isActive={isActiveWorkout} />
+    </Panel>
+  );
+};
 
-export default ({ data, active }: any) => {
+export default ({ data, activeKeys }: any) => {
   const EmptyDiv = styled.div`
     color: #FFF;
     font-style: italic;
@@ -40,12 +43,12 @@ export default ({ data, active }: any) => {
     <div className="schedule-workout">
       <Collapse
         bordered={false}
-        defaultActiveKey={active}
+        defaultActiveKey={activeKeys}
         expandIconPosition="right"
         className="schedule-collapse" 
       >
         {data.map((panel: any) => (
-          renderPanel(panel)
+          renderPanel(panel, activeKeys)
         ))}
       </Collapse>
     </div>

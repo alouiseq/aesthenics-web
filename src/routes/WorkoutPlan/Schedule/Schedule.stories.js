@@ -10,19 +10,82 @@ export default {
 
 const mockData = [
   {
-    "id": "1",
+    "id": "1111",
     "week": 1,
-    "workouts": [],
+    "workouts": [
+      {
+        "id": "014",
+        "type": "upperBody",
+        "label": "Upper Body",
+        "exercises": [
+          {
+            "id": "1238",
+            "value": "Regular Pushup",
+            "reps": "10 reps",
+            "duration": "40s"
+          },
+          {
+            "id": "1240",
+            "value": "Diamond Pushup",
+            "reps": "10 reps",
+            "duration": "40s"
+          },
+        ]
+      },
+      {
+        "id": "019",
+        "type": "handstand",
+        "label": "Handstands",
+        "exercises": [
+          {
+            "id": "1234",
+            "value": "Freeform handstand",
+            "reps": "10 reps",
+            "duration": "40s"
+          },
+          {
+            "id": "1235",
+            "value": "Handstand wall pushups",
+            "reps": "10 reps",
+            "duration": "40s"
+          },
+          {
+            "id": "1236",
+            "value": "Wall walks",
+            "reps": "10 reps",
+            "duration": "40s"
+          },
+        ],
+      },
+    ],
   },
   {
-    "id": "2",
+    "id": "1112",
     "week": 2,
-    "workouts": [],
+    "workouts": [
+      {
+        "id": "013",
+        "type": "abs",
+        "label": "Abs",
+        "exercises": []
+      }
+    ]
+  },
+  {
+    "id": "1113",
+    "week": 3,
+    "move": "abs",
+    "workouts": []
   },
 ];
 
-const setActiveSchedules = () => mockData.map(d => d.id);
+const setActiveAll = () => mockData.map(d => d.id);
+const setActiveOne = () => [mockData[0].id];
 
-export const EmptySchedule = () => <WeeklySchedule data={[]} />;
+export const EmptyAllSchedule = () => <WeeklySchedule data={[]} />;
 
-export const Schedule = () => <WeeklySchedule data={mockData} active={setActiveSchedules()} />;
+export const CollapsedSchedule = () => <WeeklySchedule data={mockData} />;
+
+export const ExpandOneSchedule = () => <WeeklySchedule data={mockData} activeKeys={setActiveOne()} />;
+
+export const ExpandAllSchedule = () => <WeeklySchedule data={mockData} activeKeys={setActiveAll()} />;
