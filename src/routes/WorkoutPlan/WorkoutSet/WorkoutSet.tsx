@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Collapse } from 'antd';
 
 import { getListKeys } from '../../../common/utils/utils';
+import './workoutSet.css';
 
 const { Panel } = Collapse;
 
@@ -15,7 +16,7 @@ interface IExerciseProps {
 
 const exerciseStyle = {
   display: 'flex',
-  background: '#000',
+  background: '#0b170b',
   color: '#FFF',
 }
 
@@ -29,7 +30,7 @@ const exerciseMainChildStyle = {
 }
 
 const renderPanel = ({ id, label, exercises}: any) => (
-  <Panel header={`${label}`} key={id}>
+  <Panel header={`${label}`} key={id} className="workout-set-collapse-panel">
     { exercises && renderExercises(exercises)}
   </Panel>
 );
@@ -51,6 +52,7 @@ const renderExercises = (exercises: any) => (
 export default ({ data, isActive }: any) => {
   const EmptyDiv = styled.div`
     color: #FFF;
+    background: #3c1e1e;
     font-style: italic;
   `;
 
@@ -62,14 +64,17 @@ export default ({ data, isActive }: any) => {
 
   const activeKeys = data && isActive && getListKeys(data) || []; 
   return (
-    <Collapse
-      bordered={false}
-      defaultActiveKey={activeKeys}
-      expandIconPosition="right"
-    >
-      {data.map((workout: any) => {
-        return renderPanel(workout);
-      })}
-    </Collapse>
+    <div className="workout-set">
+      <Collapse
+        bordered={false}
+        defaultActiveKey={activeKeys}
+        expandIconPosition="right"
+        className="workout-set-collapse"
+      >
+        {data.map((workout: any) => {
+          return renderPanel(workout);
+        })}
+      </Collapse>
+    </div>
   );
 };

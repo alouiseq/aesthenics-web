@@ -447,13 +447,47 @@ exports[`Storyshots Weekly Schedule Collapsed Schedule 1`] = `
         Week 2
       </div>
     </div>
+    <div
+      className="ant-collapse-item schedule-collapse-panel"
+    >
+      <div
+        aria-expanded="false"
+        className="ant-collapse-header"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          aria-label="right"
+          className="anticon anticon-right ant-collapse-arrow"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            className=""
+            data-icon="right"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+            />
+          </svg>
+        </span>
+        Week 3
+      </div>
+    </div>
   </div>
 </div>
 `;
 
 exports[`Storyshots Weekly Schedule Empty All Schedule 1`] = `
 <div
-  className="sc-AxirZ gFCBOb"
+  className="sc-AxirZ kdnQtR"
 >
   No Schedule Set
 </div>
@@ -514,55 +548,344 @@ exports[`Storyshots Weekly Schedule Expand All Schedule 1`] = `
           className="ant-collapse-content-box"
         >
           <div
-            className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right"
-            role={null}
+            className="workout-set"
           >
             <div
-              className="ant-collapse-item ant-collapse-item-active"
+              className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right workout-set-collapse"
+              role={null}
             >
               <div
-                aria-expanded="true"
-                className="ant-collapse-header"
-                onClick={[Function]}
-                onKeyPress={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  aria-label="right"
-                  className="anticon anticon-right ant-collapse-arrow"
-                  role="img"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className=""
-                    data-icon="right"
-                    fill="currentColor"
-                    focusable="false"
-                    height="1em"
-                    style={
-                      Object {
-                        "msTransform": "rotate(90deg)",
-                        "transform": "rotate(90deg)",
-                      }
-                    }
-                    viewBox="64 64 896 896"
-                    width="1em"
-                  >
-                    <path
-                      d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-                    />
-                  </svg>
-                </span>
-                Upper Body
-              </div>
-              <div
-                className="ant-collapse-content ant-collapse-content-active"
-                role={null}
+                className="ant-collapse-item ant-collapse-item-active workout-set-collapse-panel"
               >
                 <div
-                  className="ant-collapse-content-box"
-                />
+                  aria-expanded="true"
+                  className="ant-collapse-header"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  role="button"
+                  tabIndex={0}
+                >
+                  <span
+                    aria-label="right"
+                    className="anticon anticon-right ant-collapse-arrow"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="right"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      style={
+                        Object {
+                          "msTransform": "rotate(90deg)",
+                          "transform": "rotate(90deg)",
+                        }
+                      }
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+                      />
+                    </svg>
+                  </span>
+                  Upper Body
+                </div>
+                <div
+                  className="ant-collapse-content ant-collapse-content-active"
+                  role={null}
+                >
+                  <div
+                    className="ant-collapse-content-box"
+                  >
+                    <div
+                      style={
+                        Object {
+                          "background": "#0b170b",
+                          "color": "#FFF",
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        1.
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "flexBasis": "25%",
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        Regular Pushup
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        10 reps
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        40s
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "background": "#0b170b",
+                          "color": "#FFF",
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        2.
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "flexBasis": "25%",
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        Diamond Pushup
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        10 reps
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        40s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="ant-collapse-item ant-collapse-item-active workout-set-collapse-panel"
+              >
+                <div
+                  aria-expanded="true"
+                  className="ant-collapse-header"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  role="button"
+                  tabIndex={0}
+                >
+                  <span
+                    aria-label="right"
+                    className="anticon anticon-right ant-collapse-arrow"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="right"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      style={
+                        Object {
+                          "msTransform": "rotate(90deg)",
+                          "transform": "rotate(90deg)",
+                        }
+                      }
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+                      />
+                    </svg>
+                  </span>
+                  Handstands
+                </div>
+                <div
+                  className="ant-collapse-content ant-collapse-content-active"
+                  role={null}
+                >
+                  <div
+                    className="ant-collapse-content-box"
+                  >
+                    <div
+                      style={
+                        Object {
+                          "background": "#0b170b",
+                          "color": "#FFF",
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        1.
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "flexBasis": "25%",
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        Freeform handstand
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        10 reps
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        40s
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "background": "#0b170b",
+                          "color": "#FFF",
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        2.
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "flexBasis": "25%",
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        Handstand wall pushups
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        10 reps
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        40s
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "background": "#0b170b",
+                          "color": "#FFF",
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        3.
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "flexBasis": "25%",
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        Wall walks
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        10 reps
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        40s
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -616,57 +939,115 @@ exports[`Storyshots Weekly Schedule Expand All Schedule 1`] = `
           className="ant-collapse-content-box"
         >
           <div
-            className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right"
-            role={null}
+            className="workout-set"
           >
             <div
-              className="ant-collapse-item ant-collapse-item-active"
+              className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right workout-set-collapse"
+              role={null}
             >
               <div
-                aria-expanded="true"
-                className="ant-collapse-header"
-                onClick={[Function]}
-                onKeyPress={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  aria-label="right"
-                  className="anticon anticon-right ant-collapse-arrow"
-                  role="img"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className=""
-                    data-icon="right"
-                    fill="currentColor"
-                    focusable="false"
-                    height="1em"
-                    style={
-                      Object {
-                        "msTransform": "rotate(90deg)",
-                        "transform": "rotate(90deg)",
-                      }
-                    }
-                    viewBox="64 64 896 896"
-                    width="1em"
-                  >
-                    <path
-                      d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-                    />
-                  </svg>
-                </span>
-                Handstands
-              </div>
-              <div
-                className="ant-collapse-content ant-collapse-content-active"
-                role={null}
+                className="ant-collapse-item ant-collapse-item-active workout-set-collapse-panel"
               >
                 <div
-                  className="ant-collapse-content-box"
-                />
+                  aria-expanded="true"
+                  className="ant-collapse-header"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  role="button"
+                  tabIndex={0}
+                >
+                  <span
+                    aria-label="right"
+                    className="anticon anticon-right ant-collapse-arrow"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="right"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      style={
+                        Object {
+                          "msTransform": "rotate(90deg)",
+                          "transform": "rotate(90deg)",
+                        }
+                      }
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+                      />
+                    </svg>
+                  </span>
+                  Abs
+                </div>
+                <div
+                  className="ant-collapse-content ant-collapse-content-active"
+                  role={null}
+                >
+                  <div
+                    className="ant-collapse-content-box"
+                  />
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-collapse-item ant-collapse-item-active schedule-collapse-panel"
+    >
+      <div
+        aria-expanded="true"
+        className="ant-collapse-header"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          aria-label="right"
+          className="anticon anticon-right ant-collapse-arrow"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            className=""
+            data-icon="right"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            style={
+              Object {
+                "msTransform": "rotate(90deg)",
+                "transform": "rotate(90deg)",
+              }
+            }
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+            />
+          </svg>
+        </span>
+        Week 3
+      </div>
+      <div
+        className="ant-collapse-content ant-collapse-content-active"
+        role={null}
+      >
+        <div
+          className="ant-collapse-content-box"
+        >
+          <div
+            className="sc-AxmLO gmIIai"
+          >
+            No Workout Set
           </div>
         </div>
       </div>
@@ -730,55 +1111,344 @@ exports[`Storyshots Weekly Schedule Expand One Schedule 1`] = `
           className="ant-collapse-content-box"
         >
           <div
-            className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right"
-            role={null}
+            className="workout-set"
           >
             <div
-              className="ant-collapse-item ant-collapse-item-active"
+              className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right workout-set-collapse"
+              role={null}
             >
               <div
-                aria-expanded="true"
-                className="ant-collapse-header"
-                onClick={[Function]}
-                onKeyPress={[Function]}
-                role="button"
-                tabIndex={0}
-              >
-                <span
-                  aria-label="right"
-                  className="anticon anticon-right ant-collapse-arrow"
-                  role="img"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className=""
-                    data-icon="right"
-                    fill="currentColor"
-                    focusable="false"
-                    height="1em"
-                    style={
-                      Object {
-                        "msTransform": "rotate(90deg)",
-                        "transform": "rotate(90deg)",
-                      }
-                    }
-                    viewBox="64 64 896 896"
-                    width="1em"
-                  >
-                    <path
-                      d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-                    />
-                  </svg>
-                </span>
-                Upper Body
-              </div>
-              <div
-                className="ant-collapse-content ant-collapse-content-active"
-                role={null}
+                className="ant-collapse-item ant-collapse-item-active workout-set-collapse-panel"
               >
                 <div
-                  className="ant-collapse-content-box"
-                />
+                  aria-expanded="true"
+                  className="ant-collapse-header"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  role="button"
+                  tabIndex={0}
+                >
+                  <span
+                    aria-label="right"
+                    className="anticon anticon-right ant-collapse-arrow"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="right"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      style={
+                        Object {
+                          "msTransform": "rotate(90deg)",
+                          "transform": "rotate(90deg)",
+                        }
+                      }
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+                      />
+                    </svg>
+                  </span>
+                  Upper Body
+                </div>
+                <div
+                  className="ant-collapse-content ant-collapse-content-active"
+                  role={null}
+                >
+                  <div
+                    className="ant-collapse-content-box"
+                  >
+                    <div
+                      style={
+                        Object {
+                          "background": "#0b170b",
+                          "color": "#FFF",
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        1.
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "flexBasis": "25%",
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        Regular Pushup
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        10 reps
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        40s
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "background": "#0b170b",
+                          "color": "#FFF",
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        2.
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "flexBasis": "25%",
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        Diamond Pushup
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        10 reps
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        40s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="ant-collapse-item ant-collapse-item-active workout-set-collapse-panel"
+              >
+                <div
+                  aria-expanded="true"
+                  className="ant-collapse-header"
+                  onClick={[Function]}
+                  onKeyPress={[Function]}
+                  role="button"
+                  tabIndex={0}
+                >
+                  <span
+                    aria-label="right"
+                    className="anticon anticon-right ant-collapse-arrow"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="right"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      style={
+                        Object {
+                          "msTransform": "rotate(90deg)",
+                          "transform": "rotate(90deg)",
+                        }
+                      }
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+                      />
+                    </svg>
+                  </span>
+                  Handstands
+                </div>
+                <div
+                  className="ant-collapse-content ant-collapse-content-active"
+                  role={null}
+                >
+                  <div
+                    className="ant-collapse-content-box"
+                  >
+                    <div
+                      style={
+                        Object {
+                          "background": "#0b170b",
+                          "color": "#FFF",
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        1.
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "flexBasis": "25%",
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        Freeform handstand
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        10 reps
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        40s
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "background": "#0b170b",
+                          "color": "#FFF",
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        2.
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "flexBasis": "25%",
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        Handstand wall pushups
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        10 reps
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        40s
+                      </div>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "background": "#0b170b",
+                          "color": "#FFF",
+                          "display": "flex",
+                        }
+                      }
+                    >
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        3.
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "flexBasis": "25%",
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        Wall walks
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        10 reps
+                      </div>
+                      <div
+                        style={
+                          Object {
+                            "marginRight": "10px",
+                          }
+                        }
+                      >
+                        40s
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -819,251 +1489,38 @@ exports[`Storyshots Weekly Schedule Expand One Schedule 1`] = `
         Week 2
       </div>
     </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Workout Set Collapsed Schedule 1`] = `
-<div
-  className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right"
-  role={null}
->
-  <div
-    className="ant-collapse-item ant-collapse-item-active"
-  >
     <div
-      aria-expanded="true"
-      className="ant-collapse-header"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-label="right"
-        className="anticon anticon-right ant-collapse-arrow"
-        role="img"
-      >
-        <svg
-          aria-hidden="true"
-          className=""
-          data-icon="right"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          style={
-            Object {
-              "msTransform": "rotate(90deg)",
-              "transform": "rotate(90deg)",
-            }
-          }
-          viewBox="64 64 896 896"
-          width="1em"
-        >
-          <path
-            d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-          />
-        </svg>
-      </span>
-      Upper Body
-    </div>
-    <div
-      className="ant-collapse-content ant-collapse-content-active"
-      role={null}
+      className="ant-collapse-item schedule-collapse-panel"
     >
       <div
-        className="ant-collapse-content-box"
+        aria-expanded="false"
+        className="ant-collapse-header"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
       >
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
+        <span
+          aria-label="right"
+          className="anticon anticon-right ant-collapse-arrow"
+          role="img"
         >
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
+          <svg
+            aria-hidden="true"
+            className=""
+            data-icon="right"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
           >
-            1.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
-              }
-            }
-          >
-            Regular Pushup
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
-          </div>
-        </div>
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            2.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
-              }
-            }
-          >
-            Diamond Pushup
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="ant-collapse-item ant-collapse-item-active"
-  >
-    <div
-      aria-expanded="true"
-      className="ant-collapse-header"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-label="right"
-        className="anticon anticon-right ant-collapse-arrow"
-        role="img"
-      >
-        <svg
-          aria-hidden="true"
-          className=""
-          data-icon="right"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          style={
-            Object {
-              "msTransform": "rotate(90deg)",
-              "transform": "rotate(90deg)",
-            }
-          }
-          viewBox="64 64 896 896"
-          width="1em"
-        >
-          <path
-            d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-          />
-        </svg>
-      </span>
-      Handstands
-    </div>
-    <div
-      className="ant-collapse-content ant-collapse-content-active"
-      role={null}
-    >
-      <div
-        className="ant-collapse-content-box"
-      >
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            1.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
-              }
-            }
-          >
-            Freeform handstand
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
-          </div>
-        </div>
+            <path
+              d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+            />
+          </svg>
+        </span>
+        Week 3
       </div>
     </div>
   </div>
@@ -1072,1000 +1529,335 @@ exports[`Storyshots Workout Set Collapsed Schedule 1`] = `
 
 exports[`Storyshots Workout Set Collapsed Workout 1`] = `
 <div
-  className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right"
-  role={null}
+  className="workout-set"
 >
   <div
-    className="ant-collapse-item ant-collapse-item-active"
+    className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right workout-set-collapse"
+    role={null}
   >
     <div
-      aria-expanded="true"
-      className="ant-collapse-header"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-label="right"
-        className="anticon anticon-right ant-collapse-arrow"
-        role="img"
-      >
-        <svg
-          aria-hidden="true"
-          className=""
-          data-icon="right"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          style={
-            Object {
-              "msTransform": "rotate(90deg)",
-              "transform": "rotate(90deg)",
-            }
-          }
-          viewBox="64 64 896 896"
-          width="1em"
-        >
-          <path
-            d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-          />
-        </svg>
-      </span>
-      Upper Body
-    </div>
-    <div
-      className="ant-collapse-content ant-collapse-content-active"
-      role={null}
+      className="ant-collapse-item workout-set-collapse-panel"
     >
       <div
-        className="ant-collapse-content-box"
+        aria-expanded="false"
+        className="ant-collapse-header"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
       >
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
+        <span
+          aria-label="right"
+          className="anticon anticon-right ant-collapse-arrow"
+          role="img"
         >
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
+          <svg
+            aria-hidden="true"
+            className=""
+            data-icon="right"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
           >
-            1.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
-              }
-            }
-          >
-            Regular Pushup
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
-          </div>
-        </div>
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
+            <path
+              d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+            />
+          </svg>
+        </span>
+        Upper Body
+      </div>
+    </div>
+    <div
+      className="ant-collapse-item workout-set-collapse-panel"
+    >
+      <div
+        aria-expanded="false"
+        className="ant-collapse-header"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          aria-label="right"
+          className="anticon anticon-right ant-collapse-arrow"
+          role="img"
         >
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
+          <svg
+            aria-hidden="true"
+            className=""
+            data-icon="right"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
           >
-            2.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
-              }
-            }
-          >
-            Diamond Pushup
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
-          </div>
-        </div>
+            <path
+              d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+            />
+          </svg>
+        </span>
+        Handstands
       </div>
     </div>
   </div>
-  <div
-    className="ant-collapse-item ant-collapse-item-active"
-  >
-    <div
-      aria-expanded="true"
-      className="ant-collapse-header"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-label="right"
-        className="anticon anticon-right ant-collapse-arrow"
-        role="img"
-      >
-        <svg
-          aria-hidden="true"
-          className=""
-          data-icon="right"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          style={
-            Object {
-              "msTransform": "rotate(90deg)",
-              "transform": "rotate(90deg)",
-            }
-          }
-          viewBox="64 64 896 896"
-          width="1em"
-        >
-          <path
-            d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-          />
-        </svg>
-      </span>
-      Handstands
-    </div>
-    <div
-      className="ant-collapse-content ant-collapse-content-active"
-      role={null}
-    >
-      <div
-        className="ant-collapse-content-box"
-      >
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            1.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
-              }
-            }
-          >
-            Freeform handstand
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Workout Set Empty All Schedule 1`] = `
-<div
-  className="sc-AxmLO bdFfaU"
->
-  No Workout Set
 </div>
 `;
 
 exports[`Storyshots Workout Set Empty All Workout 1`] = `
 <div
-  className="sc-AxmLO bdFfaU"
+  className="sc-fzozJi hkSccT"
 >
   No Workout Set
-</div>
-`;
-
-exports[`Storyshots Workout Set Expand All Schedule 1`] = `
-<div
-  className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right"
-  role={null}
->
-  <div
-    className="ant-collapse-item ant-collapse-item-active"
-  >
-    <div
-      aria-expanded="true"
-      className="ant-collapse-header"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-label="right"
-        className="anticon anticon-right ant-collapse-arrow"
-        role="img"
-      >
-        <svg
-          aria-hidden="true"
-          className=""
-          data-icon="right"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          style={
-            Object {
-              "msTransform": "rotate(90deg)",
-              "transform": "rotate(90deg)",
-            }
-          }
-          viewBox="64 64 896 896"
-          width="1em"
-        >
-          <path
-            d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-          />
-        </svg>
-      </span>
-      Upper Body
-    </div>
-    <div
-      className="ant-collapse-content ant-collapse-content-active"
-      role={null}
-    >
-      <div
-        className="ant-collapse-content-box"
-      >
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            1.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
-              }
-            }
-          >
-            Regular Pushup
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
-          </div>
-        </div>
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            2.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
-              }
-            }
-          >
-            Diamond Pushup
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="ant-collapse-item ant-collapse-item-active"
-  >
-    <div
-      aria-expanded="true"
-      className="ant-collapse-header"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-label="right"
-        className="anticon anticon-right ant-collapse-arrow"
-        role="img"
-      >
-        <svg
-          aria-hidden="true"
-          className=""
-          data-icon="right"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          style={
-            Object {
-              "msTransform": "rotate(90deg)",
-              "transform": "rotate(90deg)",
-            }
-          }
-          viewBox="64 64 896 896"
-          width="1em"
-        >
-          <path
-            d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-          />
-        </svg>
-      </span>
-      Handstands
-    </div>
-    <div
-      className="ant-collapse-content ant-collapse-content-active"
-      role={null}
-    >
-      <div
-        className="ant-collapse-content-box"
-      >
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            1.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
-              }
-            }
-          >
-            Freeform handstand
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 `;
 
 exports[`Storyshots Workout Set Expand All Workout 1`] = `
 <div
-  className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right"
-  role={null}
+  className="workout-set"
 >
   <div
-    className="ant-collapse-item ant-collapse-item-active"
+    className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right workout-set-collapse"
+    role={null}
   >
     <div
-      aria-expanded="true"
-      className="ant-collapse-header"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-label="right"
-        className="anticon anticon-right ant-collapse-arrow"
-        role="img"
-      >
-        <svg
-          aria-hidden="true"
-          className=""
-          data-icon="right"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          style={
-            Object {
-              "msTransform": "rotate(90deg)",
-              "transform": "rotate(90deg)",
-            }
-          }
-          viewBox="64 64 896 896"
-          width="1em"
-        >
-          <path
-            d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-          />
-        </svg>
-      </span>
-      Upper Body
-    </div>
-    <div
-      className="ant-collapse-content ant-collapse-content-active"
-      role={null}
+      className="ant-collapse-item ant-collapse-item-active workout-set-collapse-panel"
     >
       <div
-        className="ant-collapse-content-box"
+        aria-expanded="true"
+        className="ant-collapse-header"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          aria-label="right"
+          className="anticon anticon-right ant-collapse-arrow"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            className=""
+            data-icon="right"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            style={
+              Object {
+                "msTransform": "rotate(90deg)",
+                "transform": "rotate(90deg)",
+              }
+            }
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+            />
+          </svg>
+        </span>
+        Upper Body
+      </div>
+      <div
+        className="ant-collapse-content ant-collapse-content-active"
+        role={null}
       >
         <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
+          className="ant-collapse-content-box"
         >
           <div
             style={
               Object {
-                "marginRight": "10px",
+                "background": "#0b170b",
+                "color": "#FFF",
+                "display": "flex",
               }
             }
           >
-            1.
+            <div
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+            >
+              1.
+            </div>
+            <div
+              style={
+                Object {
+                  "flexBasis": "25%",
+                  "marginRight": "10px",
+                }
+              }
+            >
+              Regular Pushup
+            </div>
+            <div
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+            >
+              10 reps
+            </div>
+            <div
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+            >
+              40s
+            </div>
           </div>
           <div
             style={
               Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
+                "background": "#0b170b",
+                "color": "#FFF",
+                "display": "flex",
               }
             }
           >
-            Regular Pushup
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
+            <div
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
               }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
+            >
+              2.
+            </div>
+            <div
+              style={
+                Object {
+                  "flexBasis": "25%",
+                  "marginRight": "10px",
+                }
               }
-            }
-          >
-            40s
-          </div>
-        </div>
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
+            >
+              Diamond Pushup
+            </div>
+            <div
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
               }
-            }
-          >
-            2.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
+            >
+              10 reps
+            </div>
+            <div
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
               }
-            }
-          >
-            Diamond Pushup
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
+            >
+              40s
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    className="ant-collapse-item ant-collapse-item-active"
-  >
     <div
-      aria-expanded="true"
-      className="ant-collapse-header"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-label="right"
-        className="anticon anticon-right ant-collapse-arrow"
-        role="img"
-      >
-        <svg
-          aria-hidden="true"
-          className=""
-          data-icon="right"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          style={
-            Object {
-              "msTransform": "rotate(90deg)",
-              "transform": "rotate(90deg)",
-            }
-          }
-          viewBox="64 64 896 896"
-          width="1em"
-        >
-          <path
-            d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-          />
-        </svg>
-      </span>
-      Handstands
-    </div>
-    <div
-      className="ant-collapse-content ant-collapse-content-active"
-      role={null}
+      className="ant-collapse-item ant-collapse-item-active workout-set-collapse-panel"
     >
       <div
-        className="ant-collapse-content-box"
+        aria-expanded="true"
+        className="ant-collapse-header"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
       >
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
+        <span
+          aria-label="right"
+          className="anticon anticon-right ant-collapse-arrow"
+          role="img"
         >
-          <div
+          <svg
+            aria-hidden="true"
+            className=""
+            data-icon="right"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
             style={
               Object {
-                "marginRight": "10px",
+                "msTransform": "rotate(90deg)",
+                "transform": "rotate(90deg)",
               }
             }
+            viewBox="64 64 896 896"
+            width="1em"
           >
-            1.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
-              }
-            }
-          >
-            Freeform handstand
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
-          </div>
-        </div>
+            <path
+              d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+            />
+          </svg>
+        </span>
+        Handstands
       </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Workout Set Expand None Schedule 1`] = `
-<div
-  className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right"
-  role={null}
->
-  <div
-    className="ant-collapse-item ant-collapse-item-active"
-  >
-    <div
-      aria-expanded="true"
-      className="ant-collapse-header"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-label="right"
-        className="anticon anticon-right ant-collapse-arrow"
-        role="img"
-      >
-        <svg
-          aria-hidden="true"
-          className=""
-          data-icon="right"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          style={
-            Object {
-              "msTransform": "rotate(90deg)",
-              "transform": "rotate(90deg)",
-            }
-          }
-          viewBox="64 64 896 896"
-          width="1em"
-        >
-          <path
-            d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-          />
-        </svg>
-      </span>
-      Upper Body
-    </div>
-    <div
-      className="ant-collapse-content ant-collapse-content-active"
-      role={null}
-    >
       <div
-        className="ant-collapse-content-box"
+        className="ant-collapse-content ant-collapse-content-active"
+        role={null}
       >
         <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
+          className="ant-collapse-content-box"
         >
           <div
             style={
               Object {
-                "marginRight": "10px",
+                "background": "#0b170b",
+                "color": "#FFF",
+                "display": "flex",
               }
             }
           >
-            1.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
+            <div
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
               }
-            }
-          >
-            Regular Pushup
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
+            >
+              1.
+            </div>
+            <div
+              style={
+                Object {
+                  "flexBasis": "25%",
+                  "marginRight": "10px",
+                }
               }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
+            >
+              Freeform handstand
+            </div>
+            <div
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
               }
-            }
-          >
-            40s
-          </div>
-        </div>
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
+            >
+              10 reps
+            </div>
+            <div
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
               }
-            }
-          >
-            2.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
-              }
-            }
-          >
-            Diamond Pushup
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    className="ant-collapse-item ant-collapse-item-active"
-  >
-    <div
-      aria-expanded="true"
-      className="ant-collapse-header"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-label="right"
-        className="anticon anticon-right ant-collapse-arrow"
-        role="img"
-      >
-        <svg
-          aria-hidden="true"
-          className=""
-          data-icon="right"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          style={
-            Object {
-              "msTransform": "rotate(90deg)",
-              "transform": "rotate(90deg)",
-            }
-          }
-          viewBox="64 64 896 896"
-          width="1em"
-        >
-          <path
-            d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-          />
-        </svg>
-      </span>
-      Handstands
-    </div>
-    <div
-      className="ant-collapse-content ant-collapse-content-active"
-      role={null}
-    >
-      <div
-        className="ant-collapse-content-box"
-      >
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            1.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
-              }
-            }
-          >
-            Freeform handstand
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
+            >
+              40s
+            </div>
           </div>
         </div>
       </div>
@@ -2076,245 +1868,78 @@ exports[`Storyshots Workout Set Expand None Schedule 1`] = `
 
 exports[`Storyshots Workout Set Expand None Workout 1`] = `
 <div
-  className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right"
-  role={null}
+  className="workout-set"
 >
   <div
-    className="ant-collapse-item ant-collapse-item-active"
+    className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right workout-set-collapse"
+    role={null}
   >
     <div
-      aria-expanded="true"
-      className="ant-collapse-header"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-label="right"
-        className="anticon anticon-right ant-collapse-arrow"
-        role="img"
-      >
-        <svg
-          aria-hidden="true"
-          className=""
-          data-icon="right"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          style={
-            Object {
-              "msTransform": "rotate(90deg)",
-              "transform": "rotate(90deg)",
-            }
-          }
-          viewBox="64 64 896 896"
-          width="1em"
-        >
-          <path
-            d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-          />
-        </svg>
-      </span>
-      Upper Body
-    </div>
-    <div
-      className="ant-collapse-content ant-collapse-content-active"
-      role={null}
+      className="ant-collapse-item workout-set-collapse-panel"
     >
       <div
-        className="ant-collapse-content-box"
+        aria-expanded="false"
+        className="ant-collapse-header"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
       >
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
+        <span
+          aria-label="right"
+          className="anticon anticon-right ant-collapse-arrow"
+          role="img"
         >
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
+          <svg
+            aria-hidden="true"
+            className=""
+            data-icon="right"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
           >
-            1.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
-              }
-            }
-          >
-            Regular Pushup
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
-          </div>
-        </div>
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            2.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
-              }
-            }
-          >
-            Diamond Pushup
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
-          </div>
-        </div>
+            <path
+              d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+            />
+          </svg>
+        </span>
+        Upper Body
       </div>
     </div>
-  </div>
-  <div
-    className="ant-collapse-item ant-collapse-item-active"
-  >
     <div
-      aria-expanded="true"
-      className="ant-collapse-header"
-      onClick={[Function]}
-      onKeyPress={[Function]}
-      role="button"
-      tabIndex={0}
-    >
-      <span
-        aria-label="right"
-        className="anticon anticon-right ant-collapse-arrow"
-        role="img"
-      >
-        <svg
-          aria-hidden="true"
-          className=""
-          data-icon="right"
-          fill="currentColor"
-          focusable="false"
-          height="1em"
-          style={
-            Object {
-              "msTransform": "rotate(90deg)",
-              "transform": "rotate(90deg)",
-            }
-          }
-          viewBox="64 64 896 896"
-          width="1em"
-        >
-          <path
-            d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
-          />
-        </svg>
-      </span>
-      Handstands
-    </div>
-    <div
-      className="ant-collapse-content ant-collapse-content-active"
-      role={null}
+      className="ant-collapse-item workout-set-collapse-panel"
     >
       <div
-        className="ant-collapse-content-box"
+        aria-expanded="false"
+        className="ant-collapse-header"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
       >
-        <div
-          style={
-            Object {
-              "background": "#000",
-              "color": "#FFF",
-              "display": "flex",
-            }
-          }
+        <span
+          aria-label="right"
+          className="anticon anticon-right ant-collapse-arrow"
+          role="img"
         >
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
+          <svg
+            aria-hidden="true"
+            className=""
+            data-icon="right"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
           >
-            1.
-          </div>
-          <div
-            style={
-              Object {
-                "flexBasis": "25%",
-                "marginRight": "10px",
-              }
-            }
-          >
-            Freeform handstand
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            10 reps
-          </div>
-          <div
-            style={
-              Object {
-                "marginRight": "10px",
-              }
-            }
-          >
-            40s
-          </div>
-        </div>
+            <path
+              d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+            />
+          </svg>
+        </span>
+        Handstands
       </div>
     </div>
   </div>

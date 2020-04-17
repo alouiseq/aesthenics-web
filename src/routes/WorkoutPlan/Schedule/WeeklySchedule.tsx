@@ -31,6 +31,7 @@ const renderPanel = ({ week, id, workouts }: any, activeKeys: string[]) => {
 export default ({ data, activeKeys }: any) => {
   const EmptyDiv = styled.div`
     color: #FFF;
+    background: #3c1e1e;
     font-style: italic;
   `;
 
