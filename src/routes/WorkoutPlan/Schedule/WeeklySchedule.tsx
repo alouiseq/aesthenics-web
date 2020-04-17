@@ -1,5 +1,5 @@
 import React from 'react';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 import { Collapse } from 'antd';
 
 import WorkoutSet from '../WorkoutSet/WorkoutSet';
@@ -19,24 +19,34 @@ const { Panel } = Collapse;
 //   color: '#FFF',
 // }
 
-export default ({ data }: any) => {
-  // TODO: should probably come from API
-  const activeKey = data[0].id;
+const renderPanel = ({ week, id, workouts }: any) => (
+  <Panel header={`Week ${week}`} key={id} className="schedule-collapse-panel">
+    <WorkoutSet data={workouts} />
+  </Panel>
+);
+
+export default ({ data, active }: any) => {
+  const EmptyDiv = styled.div`
+    color: #FFF;
+    font-style: italic;
+  `;
+
+  const emptyState = () => (
+    <EmptyDiv>No Schedule Set</EmptyDiv>
+  );
+
+  if (!data.length) return emptyState();
   return (
     <div className="schedule-workout">
       <Collapse
         bordered={false}
-        defaultActiveKey={[activeKey]}
+        defaultActiveKey={active}
         expandIconPosition="right"
         className="schedule-collapse" 
       >
-        {data.map((d: any) => {
-          return (
-            <Panel header={`Week ${d.week}`} key={d.id} className="schedule-collapse-panel">
-              <WorkoutSet data={d.workouts} />
-            </Panel>
-          )
-        })}
+        {data.map((panel: any) => (
+          renderPanel(panel)
+        ))}
       </Collapse>
     </div>
   );

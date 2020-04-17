@@ -1,0 +1,479 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots ButtonLink Btn Link 1`] = `
+<div
+  style={
+    Object {
+      "textAlign": "center",
+    }
+  }
+>
+  <button
+    className="ant-btn sc-AxjAm StDqN"
+    onClick={[Function]}
+    style={
+      Object {
+        "fontWeight": "bold",
+      }
+    }
+    type="button"
+  >
+    <a
+      href=""
+      onClick={[Function]}
+    >
+      Takes me somewhere
+    </a>
+  </button>
+</div>
+`;
+
+exports[`Storyshots ExerciseCard Active Card 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "50%",
+      "transform": "translate(-30%, 0)",
+    }
+  }
+>
+  <div
+    className="ant-card ant-card-bordered"
+    style={
+      Object {
+        "backgroundColor": "#1f671f",
+        "color": "#fff",
+        "marginBottom": "20px",
+        "marginRight": "20px",
+        "textAlign": "center",
+        "width": "170px",
+      }
+    }
+  >
+    <div
+      className="ant-card-head"
+      style={Object {}}
+    >
+      <div
+        className="ant-card-head-wrapper"
+      >
+        <div
+          className="ant-card-head-title"
+        >
+          <div
+            style={
+              Object {
+                "color": "#fff",
+                "fontSize": "10px",
+                "textAlign": "left",
+              }
+            }
+          >
+            Advanced
+          </div>
+        </div>
+        <div
+          className="ant-card-extra"
+        >
+          <button
+            className="ant-btn ant-btn-sm"
+            onClick={[Function]}
+            style={
+              Object {
+                "border": "1px solid #1f671f",
+                "color": "#1f671f",
+                "fontSize": "10px",
+              }
+            }
+            type="button"
+          >
+            <span>
+              More
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-card-body"
+      style={Object {}}
+    >
+      <div
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Belly Flop
+      </div>
+      <div
+        style={
+          Object {
+            "fontSize": "10px",
+            "fontStyle": "italic",
+            "marginTop": "10px",
+          }
+        }
+      >
+        [belly, face]
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ExerciseCard Card Default 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "50%",
+      "transform": "translate(-30%, 0)",
+    }
+  }
+>
+  <div
+    className="ant-card ant-card-bordered"
+    style={
+      Object {
+        "marginBottom": "20px",
+        "marginRight": "20px",
+        "textAlign": "center",
+        "width": "170px",
+      }
+    }
+  >
+    <div
+      className="ant-card-head"
+      style={Object {}}
+    >
+      <div
+        className="ant-card-head-wrapper"
+      >
+        <div
+          className="ant-card-head-title"
+        >
+          <div
+            style={
+              Object {
+                "color": "inherit",
+                "fontSize": "10px",
+                "textAlign": "left",
+              }
+            }
+          >
+            Advanced
+          </div>
+        </div>
+        <div
+          className="ant-card-extra"
+        >
+          <button
+            className="ant-btn ant-btn-sm"
+            onClick={[Function]}
+            style={
+              Object {
+                "border": "1px solid #1f671f",
+                "color": "#1f671f",
+                "fontSize": "10px",
+              }
+            }
+            type="button"
+          >
+            <span>
+              More
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-card-body"
+      style={Object {}}
+    >
+      <div
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Belly Flop
+      </div>
+      <div
+        style={
+          Object {
+            "fontSize": "10px",
+            "fontStyle": "italic",
+            "marginTop": "10px",
+          }
+        }
+      >
+        [belly, face]
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ExerciseCard No Gif Card 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "50%",
+      "transform": "translate(-30%, 0)",
+    }
+  }
+>
+  <div
+    className="ant-card ant-card-bordered"
+    style={
+      Object {
+        "marginBottom": "20px",
+        "marginRight": "20px",
+        "textAlign": "center",
+        "width": "170px",
+      }
+    }
+  >
+    <div
+      className="ant-card-head"
+      style={Object {}}
+    >
+      <div
+        className="ant-card-head-wrapper"
+      >
+        <div
+          className="ant-card-head-title"
+        >
+          <div
+            style={
+              Object {
+                "color": "inherit",
+                "fontSize": "10px",
+                "textAlign": "left",
+              }
+            }
+          >
+            Advanced
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-card-body"
+      style={Object {}}
+    >
+      <div
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Belly Flop
+      </div>
+      <div
+        style={
+          Object {
+            "fontSize": "10px",
+            "fontStyle": "italic",
+            "marginTop": "10px",
+          }
+        }
+      >
+        [belly, face]
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots ExerciseCard No Target Card 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "50%",
+      "transform": "translate(-30%, 0)",
+    }
+  }
+>
+  <div
+    className="ant-card ant-card-bordered"
+    style={
+      Object {
+        "marginBottom": "20px",
+        "marginRight": "20px",
+        "textAlign": "center",
+        "width": "170px",
+      }
+    }
+  >
+    <div
+      className="ant-card-head"
+      style={Object {}}
+    >
+      <div
+        className="ant-card-head-wrapper"
+      >
+        <div
+          className="ant-card-head-title"
+        >
+          <div
+            style={
+              Object {
+                "color": "inherit",
+                "fontSize": "10px",
+                "textAlign": "left",
+              }
+            }
+          >
+            Advanced
+          </div>
+        </div>
+        <div
+          className="ant-card-extra"
+        >
+          <button
+            className="ant-btn ant-btn-sm"
+            onClick={[Function]}
+            style={
+              Object {
+                "border": "1px solid #1f671f",
+                "color": "#1f671f",
+                "fontSize": "10px",
+              }
+            }
+            type="button"
+          >
+            <span>
+              More
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-card-body"
+      style={Object {}}
+    >
+      <div
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Belly Flop
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Weekly Schedule Empty Schedule 1`] = `
+<div
+  className="sc-AxirZ gFCBOb"
+>
+  No Schedule Set
+</div>
+`;
+
+exports[`Storyshots Weekly Schedule Schedule 1`] = `
+<div
+  className="schedule-workout"
+>
+  <div
+    className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right schedule-collapse"
+    role={null}
+  >
+    <div
+      className="ant-collapse-item ant-collapse-item-active schedule-collapse-panel"
+    >
+      <div
+        aria-expanded="true"
+        className="ant-collapse-header"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          aria-label="right"
+          className="anticon anticon-right ant-collapse-arrow"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            className=""
+            data-icon="right"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            style={
+              Object {
+                "msTransform": "rotate(90deg)",
+                "transform": "rotate(90deg)",
+              }
+            }
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+            />
+          </svg>
+        </span>
+        Week 1
+      </div>
+      <div
+        className="ant-collapse-content ant-collapse-content-active"
+        role={null}
+      >
+        <div
+          className="ant-collapse-content-box"
+        >
+          <div
+            className="ant-collapse ant-collapse-borderless ant-collapse-icon-position-right"
+            role={null}
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-collapse-item schedule-collapse-panel"
+    >
+      <div
+        aria-expanded="false"
+        className="ant-collapse-header"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          aria-label="right"
+          className="anticon anticon-right ant-collapse-arrow"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            className=""
+            data-icon="right"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M765.7 486.8L314.9 134.7A7.97 7.97 0 00302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 000-50.4z"
+            />
+          </svg>
+        </span>
+        Week 2
+      </div>
+    </div>
+  </div>
+</div>
+`;

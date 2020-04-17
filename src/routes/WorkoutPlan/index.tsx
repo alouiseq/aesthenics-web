@@ -12,10 +12,13 @@ const WorkoutPlan = ({ getWorkoutSchedule, workoutSchedule }: any) => {
     getWorkoutSchedule();
   }, [getWorkoutSchedule]);
 
+  // TODO: This should come from the custom workout section - side panel
+  const activeSchedules = workoutSchedule && workoutSchedule.map((ws: any) => ws.id);
+
   return (
     <Layout>
       <Content style={{backgroundColor: '#000'}}>
-        {workoutSchedule.length && <WeeklySchedule data={workoutSchedule} />}
+        <WeeklySchedule data={workoutSchedule} active={activeSchedules} />
       </Content>
     </Layout>
   );

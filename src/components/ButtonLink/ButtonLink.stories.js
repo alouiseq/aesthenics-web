@@ -7,7 +7,11 @@ import ButtonLink from './ButtonLink';
 export default {
   title: 'ButtonLink',
   component: ButtonLink,
-  decorators: [storyFn => <MemoryRouter>{storyFn()}</MemoryRouter>]
+  decorators: [storyFn => (
+    <MemoryRouter>
+      <div style={{textAlign: 'center'}}>{storyFn()}</div>
+    </MemoryRouter>
+  )],
 };
 
 export const BtnLink = () => <ButtonLink label="Takes me somewhere" path={action('clicked')} style={{fontWeight: 'bold'}} />;

@@ -3,9 +3,15 @@ import { action } from '@storybook/addon-actions';
 import ExerciseCard from './ExerciseCard';
 import mockGif from '../../mock/images/pistolSquat.gif';
 
+const outerStyle = {
+  marginLeft: '50%',
+  transform: 'translate(-30%, 0)',
+};
+
 export default {
   title: 'ExerciseCard',
   component: ExerciseCard,
+  decorators: [storyFn => <div style={outerStyle}>{storyFn()}</div>],
   // excludeStories: /.*Data$/,
 };
 
